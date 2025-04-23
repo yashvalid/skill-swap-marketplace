@@ -1,9 +1,11 @@
 import React from 'react'
 import { ArrowRightIcon, UsersIcon, MessageSquareIcon, BookOpenIcon, StarIcon } from 'lucide-react'
+import {Link} from 'react-router-dom'
 export function Start() {
+  
   return (
     <div className="w-full">
-      {/* Hero Section */}
+      
       <section className="bg-gradient-to-b from-indigo-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center max-w-3xl mx-auto">
@@ -14,10 +16,10 @@ export function Start() {
               SkillSwap connects you with people who want to learn your skills while teaching you theirs. No money involved - just knowledge exchange.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              <Link to='/login' className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Get Started
                 <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </button>
+              </Link>
               <button className="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Learn More
               </button>
@@ -57,7 +59,7 @@ export function Start() {
           </div>
         </div>
       </section>
-      {/* Features Section */}
+      
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -111,7 +113,7 @@ export function Start() {
           </div>
         </div>
       </section>
-      {/* CTA Section */}
+      
       <section className="bg-indigo-600 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
@@ -120,10 +122,10 @@ export function Start() {
           <p className="text-xl text-indigo-100 mb-8">
             Join thousands of users exchanging skills on SkillSwap
           </p>
-          <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white">
+          <Link to='/login' className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white">
             Create Your Free Account
             <ArrowRightIcon className="ml-2 h-5 w-5" />
-          </button>
+          </Link>
         </div>
       </section>
     </div>

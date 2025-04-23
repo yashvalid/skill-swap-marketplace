@@ -31,7 +31,7 @@ export function UserProfilePage() {
   const [showOfferForm, setShowOfferForm] = useState(false);
   const [showLearnForm, setShowLearnForm] = useState(false);
 
-  // Populate profile state with userData on mount
+  
   useEffect(() => {
     if (userData) {
       setProfile({
@@ -233,7 +233,6 @@ export function UserProfilePage() {
         </div>
       </div>
 
-      {/* Skills to Offer Section */}
       <div className="mt-8 bg-white shadow rounded-lg p-6">
         <div className="flex justify-between items-center mb-6">
           <h3 className="text-lg font-medium text-gray-900">Skills I Can Teach</h3>
@@ -293,7 +292,6 @@ export function UserProfilePage() {
         </div>
       </div>
 
-      {/* Skills to Learn Section */}
       <div className="mt-8 bg-white shadow rounded-lg p-6">
         <div className="flex justify-between items-center mb-6">
           <h3 className="text-lg font-medium text-gray-900">Skills I Want to Learn</h3>
